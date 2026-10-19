@@ -1,0 +1,30 @@
+Look at this HR image ({image_id}) and identify low-level visual evidence
+targets for short-answer Q/A generation.
+
+Taxonomy definitions:
+
+- color_tone: Visible color, brightness, contrast, highlight, shadow, or
+  tone relationship within an image region.
+
+- edge_shape: Visible orientation, curvature, thickness, continuity, or
+  shape of a boundary or small structural part.
+
+- texture: Visible surface grain, material appearance, fine pattern,
+  line structure, or texture density.
+
+Generate 3 color_tone targets, 3 edge_shape targets, and 3 texture targets
+for this image. A target is suitable when it is clearly visible in the HR
+image, supports a specific short-answer question, and may be altered by
+downsampling or super-resolution.
+
+Reply with valid JSON only:
+[
+  {
+    "evidence_id": "le01",
+    "taxonomy": "color_tone",
+    "region_scope": "local",
+    "region_hint": "brief visible location",
+    "target": "specific low-level visual property",
+    "hallucination_risk": "how this property may be altered or invented"
+  }
+]

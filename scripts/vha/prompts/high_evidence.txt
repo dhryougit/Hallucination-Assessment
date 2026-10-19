@@ -1,0 +1,39 @@
+Look at this HR image ({image_id}) and identify high-level semantic
+evidence targets for short-answer Q/A generation.
+
+Taxonomy definitions:
+
+- scene_semantic: The overall scene, environment, or image-level context.
+  This taxonomy must describe the image as a whole or a broad scene region,
+  not a single object.
+
+- object_semantic: A distinct object or structure that contributes
+  meaningfully to the image content, such as a tree, grass, tower, wall,
+  house, vehicle, bridge, or signboard; or a recognizable visual property
+  or part within an object or local region, such as texture, style,
+  material, decoration, or a visible object part.
+
+- text_logo: Clearly readable text, words, numbers, signs, brands, or logos.
+
+Generate up to 1 scene_semantic target, up to 4 object_semantic targets,
+and up to 4 text_logo targets.
+
+A target is suitable when it is clearly visible in the HR image,
+supports a specific short-answer question, and may be altered by
+downsampling or super-resolution.
+
+Generate as many valid targets as are clearly supported by the image,
+within these limits.
+
+Reply with valid JSON only:
+
+[
+  {
+    "evidence_id": "he01",
+    "taxonomy": "scene_semantic",
+    "region_scope": "whole_scene or localized region",
+    "region_hint": "brief visible location",
+    "target": "specific high-level semantic content",
+    "hallucination_risk": "how this content may be altered or invented"
+  }
+]

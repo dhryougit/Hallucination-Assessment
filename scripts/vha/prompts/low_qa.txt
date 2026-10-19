@@ -1,0 +1,39 @@
+Look at this HR image ({image_id}) and generate one highly specific
+low-level short-answer Q/A pair for each provided evidence item.
+
+The question must identify the relevant image region and ask only about
+the specified low-level visual property.
+
+Describe the finest reliably visible appearance. Avoid broad categorical
+answers when the image supports a more precise description.
+
+Use the following attribute structure:
+
+- color_tone: describe the visible hue together with its lightness,
+  saturation, or local tonal character.
+
+- edge_shape: describe the visible boundary using its thickness,
+  continuity, smoothness, geometry, or orientation.
+
+- texture: describe the visible texture using its scale, direction,
+  regularity, density, or structural appearance.
+
+Combine two or three complementary visual attributes when they are
+clearly supported by the image. Do not add an attribute merely to make
+the answer longer or more specific.
+
+Use visually grounded everyday terms. Do not use uncommon or technical
+terminology solely for greater specificity.
+
+Do not ask about overall image quality or sharpness preference.
+Do not create yes/no questions.
+
+Each answer must be specific and 2-3 words long.
+
+Evidence items:
+{evidence_json}
+
+Reply with valid JSON only:
+[
+  {"evidence_id": "le01", "q": "...", "a": "..."}
+]

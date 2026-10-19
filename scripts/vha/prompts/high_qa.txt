@@ -1,0 +1,28 @@
+Look at this HR image ({image_id}) and generate one high-level
+short-answer Q/A pair for each provided {taxonomy}
+evidence item.
+
+Taxonomy definition:
+
+{taxonomy_definition}
+
+The question must identify the relevant image region unambiguously and
+ask only about the specified high-level semantic content.
+
+Use a precise semantic label or short noun phrase.
+
+Do not ask about overall image quality.
+
+Do not create yes/no questions.
+
+Each answer must be specific and 1-3 words only.
+
+Evidence items:
+
+{evidence_json}
+
+Reply with valid JSON only:
+
+[
+  {"evidence_id": "{example_evidence_id}", "q": "...", "a": "..."}
+]
