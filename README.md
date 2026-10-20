@@ -2,7 +2,7 @@
 
 <h1>VHA: VQA-based Hallucination Assessment for Generative Image Super-Resolution</h1>
 
-<img src="https://img.shields.io/badge/Paper-arXiv-red" alt="Paper: arXiv (submission in progress)" title="arXiv submission in progress">
+<a href="https://arxiv.org/abs/2610.25770"><img src="https://img.shields.io/badge/Paper-arXiv-red" alt="Paper: arXiv 2610.25770" title="Read the paper on arXiv"></a>
 <a href="https://dhryougit.github.io/Hallucination-Assessment-pages/"><img src="https://img.shields.io/badge/Website-ProjectPage-blue" alt="Project Page"></a>
 
 </div>
