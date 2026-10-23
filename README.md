@@ -31,13 +31,13 @@ IDs in `ratings.csv` are not used by the evaluation code.
 
 | Dataset | Download |
 |---|---|
-| VHA-bench | [Google Drive](https://drive.google.com/drive/folders/1TEYDmms1CQNUDWjwVxNcQdwyYXveg32D?usp=drive_link) |
+| VHA-bench | [Google Drive](https://drive.google.com/drive/folders/1TEYDmms1CQNUDWjwVxNcQdwyYXveg32D?usp=drive_link) · [Hugging Face](https://huggingface.co/datasets/dhryou/VHA-bench) |
 
 ## 📂 Model checkpoints
 
 | Model | Description | Download |
 |---|---|---|
-| VHA+ | Lightweight hallucination assessor for GT–SR image pairs. | [Google Drive](https://drive.google.com/file/d/19jOvo8LR7HeXva0y0ub2LY0WxEeabxxI/view?usp=drive_link) |
+| VHA+ | Lightweight hallucination assessor for GT–SR image pairs. | [Google Drive](https://drive.google.com/file/d/19jOvo8LR7HeXva0y0ub2LY0WxEeabxxI/view?usp=drive_link) · [Hugging Face](https://huggingface.co/dhryou/VHA-plus) |
 | Qwen3-VL-8B-Instruct | Required for VHA Q/A generation and hallucination scoring. | [Hugging Face](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct) |
 
 Download the VHA+ checkpoint and save it as `data/checkpoints/vhaplus.pt`.
